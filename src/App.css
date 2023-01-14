@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu+Condensed&display=swap");
+
+.login-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.heading-section {
+  font-size: 32px;
+}
+
+.tags-input {
+  /* font-family: "Ubuntu Condensed"; */
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 48px;
+  width: 480px;
+  padding: 14px 8px;
+  border: 1px solid rgb(214, 216, 218);
+  border-radius: 6px;
+}
+
+.tags-input input {
+  flex: 1;
+  border: none;
+  /* height: 46px; */
+  /* font-size: 20px; */
+  margin: 0 14px;
+}
+
+.tags-input input:focus {
+  outline: transparent;
+}
+
+.Blog-textarea {
+  width: 600px;
+}
+@media only screen and (max-device-width: 480px) {
+  .tags-input {
+    width: 350px;
+  }
+
+  .Blog-textarea {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+/* Spinner Animation */
+.gooey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: white;
+  filter: contrast(20);
+}
+.dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 12px;
+  left: 15px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+  transform: translateX(0);
+  animation: dot 2.8s infinite;
+}
+.dots {
+  transform: translateX(0);
+  margin-top: 12px;
+  margin-left: 31px;
+  animation: dots 2.8s infinite;
+}
+.dots span {
+  display: block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  filter: blur(4px);
+  background: #000;
+  border-radius: 50%;
+}
+
+@keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
+@keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
+
+/* 404 Animation */
+#main {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-family: "Ubuntu Condensed";
+  color: #888;
+  margin: 0;
+}
+
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type 0.5s alternate infinite;
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px #888;
+  }
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
